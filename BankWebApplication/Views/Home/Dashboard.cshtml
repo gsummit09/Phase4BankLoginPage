@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1>Dashboard</h1>
+<p> Welcome to Bank Dashboard </p>
+
+<div class="mt-3">
+    <h4>Account Actions</h4>
+    <button class="btn btn-success">Deposit</button>
+    <button class="btn btn-warning">Withdraw</button>
+    <button class="btn btn-success">Transfer</button>
+    <!-- Add more buttons for other account actions as needed -->
+</div>
+<br />
+<form method="post" asp-controller="Dashboard" asp-action="Logout">
+    <button type="submit">Logout</button>
+</form>
